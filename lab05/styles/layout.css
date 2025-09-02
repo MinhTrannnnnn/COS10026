@@ -71,6 +71,10 @@ ol, ul, dl {
   text-align: center;
 }
 
+table {
+  margin: auto;
+}
+
 
 
 /* === Hyperlinks Section === */
