@@ -44,10 +44,6 @@ aside:hover {
   display: inline-block;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
 
 nav ul li {
   margin-bottom: 0.5em;
