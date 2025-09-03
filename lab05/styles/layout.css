@@ -49,7 +49,7 @@ aside:hover {
 /* === Lists Section === */
 #lists {
   float: left;
-  width: 45%;
+  width: 50%;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ ol, ul, dl {
 /* === Tables Section === */
 #tables {
   float: right;
-  width: 45%;
+  width: 50%;
   text-align: center;
 }
 
@@ -74,19 +74,23 @@ table {
 #hyperlinks {
   clear: both;
   padding-top: 1em;
+  text-align: center;
+  width: 50%;
 }
 
 /* === Images Section === */
 #images {
   float: right;
-  width: 40%;
+  width: 50%;
   margin-top: 1em;
+  text-align: center;
 }
 
 figure {
   border: 2px solid #ccc;
   padding: 0.5em;
   text-align: center;
+
 }
 
 figcaption {
@@ -96,7 +100,7 @@ figcaption {
 
 /* === Footer === */
 footer {
-  border-top: 4px double #444;
+  border-top: 4px double darkgray;
   clear: both;
   padding: 1em;
   background-color: #f0f0f0;
