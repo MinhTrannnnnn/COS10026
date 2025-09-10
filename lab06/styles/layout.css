@@ -1,0 +1,129 @@
+/*
+filename: layout.css
+author: Minh Tran
+created: 3 September 2025
+last modified: 3 September 2025
+description: layout for lab05.html
+*/
+
+/* === General Reset & Base Styles === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  min-width: 30em;
+  padding: 1em;
+}
+
+/* === Header === */
+header {
+  border: 1px solid darkgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: lightgray;
+  text-align: center;
+}
+
+/* === Aside Menu === */
+aside {
+  float: right;
+  width: 30%;
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #333;
+  background-image: url("images/fade.jpg");
+  background-size: cover;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+aside:hover {
+  display: block; /* override lab04.css if needed */
+}
+
+.menu {
+  display: inline-block;
+}
+
+
+
+/* === Lists Section === */
+#lists {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+ol, ul, dl {
+  text-align: left;
+}
+
+/* === Tables Section === */
+#tables {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+
+
+/* === Hyperlinks Section === */
+#hyperlinks {
+  float: left;
+  clear: both;
+  padding-top: 1em;
+  text-align: center;
+  width: 50%;
+}
+
+/* === Images Section === */
+#images {
+  float: right;
+  width: 50%;
+  margin-top: 1em;
+  text-align: center;
+}
+
+figure {
+  border: 2px solid #ccc;
+  padding: 0.5em;
+  text-align: center;
+
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+/* === Footer === */
+footer {
+  border-top: 4px double darkgray;
+  clear: both;
+  padding: 1em;
+  background-color: #f0f0f0;
+}
+
+footer p {
+  display: inline-block;
+  width: 33%;
+}
+
+footer p:first-child {
+  float: left;
+}
+
+footer p:nth-child(2) {
+  text-align: center;
+}
+
+footer p:last-child {
+  float: right;
+  text-align: right;
+}
