@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Search for a Car Model</h2>
-    <form action="search_result.php" method="get">
+    <form action="searchresult.php" method="get">
         <label for="model">Model:</label>
         <input type="text" name="model" id="model" required>
         <input type="submit" value="Search">
