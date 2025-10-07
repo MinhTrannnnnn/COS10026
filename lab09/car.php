@@ -1,21 +1,15 @@
 <?php
-// Step 1: Connect to the database
 require_once "settings.php";
 $dbconn = @mysqli_connect($host, $user, $pwd, $sql_db);
 
-// Step 2: Check connection
 if (!$dbconn) {
     echo "<p>Unable to connect to the database.</p>";
     exit;
 }
 
-// Step 3: Create your SQL query
 $query = "SELECT * FROM cars";
-
-// Step 4: Execute your SQL query
 $result = mysqli_query($dbconn, $query);
 
-// Step 5: Display results in an HTML table
 if ($result && mysqli_num_rows($result) > 0) {
     echo "<h2>Car Inventory</h2>";
     echo "<table border='1' cellpadding='10'>";
@@ -28,20 +22,19 @@ if ($result && mysqli_num_rows($result) > 0) {
           </tr>";
 
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "<tr>
-                <td>{$row['car_id']}</td>
-                <td>{$row['make']}</td>
-                <td>{$row['model']}</td>
-                <td>{$row['price']}</td>
-                <td>{$row['yom']}</td>
-              </tr>";
+        echo "<tr>";
+        echo "<td>" . $row['car_id'] . "</td>";
+        echo "<td>" . $row['make'] . "</td>";
+        echo "<td>" . $row['model'] . "</td>";
+        echo "<td>" . $row['price'] . "</td>";
+        echo "<td>" . $row['yom'] . "</td>";
+        echo "</tr>";
     }
 
     echo "</table>";
 } else {
-    echo "<p>No car records found.</p>";
+    echo "<p>There are no cars to display.</p>";
 }
 
-// Step 6: Close connection
 mysqli_close($dbconn);
 ?>
